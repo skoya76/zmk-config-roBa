@@ -10,6 +10,7 @@
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -56,7 +57,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E          &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D          &kp F         &kp G        &none             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp A             &kp S         &kp D          &kp F         &kp G        &none             &kp MINUS      &kp H        &kp J  &lt 4 K    &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X         &kp C          &kp V         &kp B        &lt 6 ESCAPE      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp TAB           &kp LEFT_ALT  &kp LC(SPACE)  &kp LEFT_GUI  &lt 2 SPACE  &lt 3 LCTRL       &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
@@ -97,8 +98,8 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp LC(Z)  &kp LC(Y)  &kp LC(F)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(A)  &mkp MB1   &mkp MB3   &mkp MB2  &kp LC(S)
+&trans  &trans  &trans  &trans  &trans                      &kp LC(Z)  &kp LC(Y)  &trans     &trans    &kp LC(F)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(A)  &mkp MB1   &trans     &mkp MB2  &kp LC(S)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
             >;
