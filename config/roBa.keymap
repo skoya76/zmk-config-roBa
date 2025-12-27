@@ -9,7 +9,7 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
+    // automouse-layer = <4>;
     scroll-layers = <5>;
 
     // arrows {
@@ -55,10 +55,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E          &kp R           &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D          &kp F           &kp G        &none             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C          &kp V           &kp B        &lt 6 ESCAPE      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LEFT_ALT  &kp LC(SPACE)  &lt 6 LEFT_GUI  &lt 2 SPACE  &lt 3 LCTRL       &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E          &kp R         &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D          &kp F         &kp G        &none             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C          &kp V         &kp B        &lt 6 ESCAPE      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp TAB           &kp LEFT_ALT  &kp LC(SPACE)  &kp LEFT_GUI  &lt 2 SPACE  &lt 3 LCTRL       &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -84,15 +84,15 @@
             >;
         };
 
-        ARROW {
+        NUMPAD {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp NUMBER_0                                            &kp DOT
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>; // zoom in/out for documents
+            sensor-bindings = <&inc_dec_kp KP_PLUS KP_MINUS>; // increment/decrement numbers
         };
 
         MOUSE {
@@ -124,17 +124,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>; // document scroll
-        };
-
-        NUMPAD {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp NUMBER_0                                            &kp DOT
-            >;
-
-            sensor-bindings = <&inc_dec_kp KP_PLUS KP_MINUS>; // increment/decrement numbers
         };
     };
 };
