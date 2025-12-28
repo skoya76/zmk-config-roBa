@@ -48,7 +48,7 @@
         };
 
         ctrl+a {
-            bindings = <&none>;
+            bindings = <&kp LC(A)>;
             key-positions = <10 11>;
         };
     };
