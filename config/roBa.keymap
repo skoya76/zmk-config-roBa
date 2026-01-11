@@ -67,7 +67,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E      &kp R         &kp T                                              &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A       &kp S         &kp D      &kp F         &kp G        &kp PRINTSCREEN      &kp SQT          &kp H        &kp J  &kp K      &kp L    &mt RCTRL MINUS
+&mt LCTRL A       &kp S         &kp D      &kp F         &kp G        &kp PRINTSCREEN      &kp SQT          &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C      &kp V         &kp B        &gresc               &lt 6 SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp TAB           &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &lt 2 SPACE  &lt 3 LC(SPACE)      &kp BACKSPACE    &lt 1 ENTER                             &kp DELETE
             >;
@@ -108,10 +108,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp LC(Z)  &kp LC(Y)  &trans     &trans    &kp LC(F)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(A)  &mkp MB1   &trans     &mkp MB2  &kp LC(S)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
+&trans  &trans  &trans  &trans  &trans                      &kp LC(Z)  &kp LC(Y)  &trans     &trans  &kp LC(F)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(A)  &mkp MB1   &mkp MB2   &trans  &kp LC(S)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>; // undo/redo
