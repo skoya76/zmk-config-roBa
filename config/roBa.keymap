@@ -119,10 +119,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp LC(Z)  &kp LC(Y)  &kp LC(F)  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(A)  &mkp MB1   &mkp MB2   &kp LC(S)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                      &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>; // undo/redo
