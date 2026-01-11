@@ -93,6 +93,8 @@
 &trans           &trans         &trans        &kp MINUS   &kp UNDERSCORE  &kp TILDE      &trans     &trans          &trans                &kp PIPE               &kp BACKSLASH     &kp SLASH
 &trans           &trans         &trans        &trans      &trans          &trans         &trans     &trans                                                                         &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRI_INC C_BRI_DEC>;
         };
 
         NUMPAD {
