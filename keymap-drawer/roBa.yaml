@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: MOUSE}
+  - {t: '-', h: RCTRL}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -308,8 +308,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
-combos:
-- p: [22, 23]
-  k: Ctl+Z
-- p: [10, 11]
-  k: Ctl+A
